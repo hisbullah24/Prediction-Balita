@@ -3,10 +3,6 @@ import pickle
 
 st.title('Prediction Stunting Toddler')
 
-st.set_page_config(
-    page_title="Multiple App",
-)
-
 st.sidebar.success("Select a demo above.")
 
 gender = st.radio(
