@@ -3,6 +3,8 @@ import pickle
 
 st.title('Prediction Stunting Toddler')
 
+st.sidebar.success("Select a demo above.")
+
 gender = st.radio(
     "Apa jenis kelamin anak kamu?",
     ["***Laki-laki***", "***Perempuan***"],
