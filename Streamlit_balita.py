@@ -11,5 +11,5 @@ gender = st.radio(
 
 st.write("You selected:", gender)
 
-umur = st.slider("Berapa bulan umur anak anda?", 0, 130, 25)
+umur = st.slider("Berapa bulan umur anak anda?", 0, 60, 30)
 st.write("Anak anda berumur ", umur, "Bulan")
