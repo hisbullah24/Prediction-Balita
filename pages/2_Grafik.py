@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-uploaded_file = st.file_uploader("Upload file CSV", type="csv")
+uploaded_file = pd.read_csv("./data_balita.csv")
 if uploaded_file:
     df = pd.read_csv(uploaded_file)
 
