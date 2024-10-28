@@ -1,6 +1,10 @@
 import streamlit as st
 import pickle
 
+# Load the model
+with open("model.pkl", "rb") as file:
+    model = pickle.load(file)
+
 st.title('Prediction Stunting Toddler')
 
 st.sidebar.success("Select a demo above.")
