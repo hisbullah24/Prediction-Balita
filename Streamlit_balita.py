@@ -1,8 +1,18 @@
-import streamlit as st
+import gdown
 import pickle
+import numpy as np
+import streamlit as st
+
+# Google Drive file ID
+file_id = "1RNd9oQZhzQWRFVqQhXO0ggAOAMSaKKao"
+
+# Download model file
+url = f"https://drive.google.com/file/d/1RNd9oQZhzQWRFVqQhXO0ggAOAMSaKKao"
+output = "model_stunting.pkl"
+gdown.download(url, output, quiet=False)
 
 # Load the model
-with open("model.pkl", "rb") as file:
+with open(output, "rb") as file:
     model = pickle.load(file)
 
 st.title('Prediction Stunting Toddler')
