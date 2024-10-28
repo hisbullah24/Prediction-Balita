@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import plotly.express as px
 
 uploaded_file = st.file_uploader("./data_balita.csv", type="csv")
 
