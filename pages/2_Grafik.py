@@ -7,7 +7,7 @@ import os
 
 file_path = "./data_balita.csv"
 
-st.title("Grafik Stunting")
+st.title("Diagram Stunting")
 st.write("Dibawah ini adalah diagram anak laki-laki dan perempuan yang telah di kluster dalam 4 kondisi stunting")
 
 if os.path.exists(file_path):
@@ -30,6 +30,9 @@ st.caption("Normal : Anak yang tinggi badannya normal")
 st.caption("Stunted : Anak yang tinggi badannya pendek")
 st.caption("Severely Stunted : Anak yang tinggi badannya sangat pendek")
 
+st.divider()
+
+st.title("Grafik Stunting")
 st.write("Dibawah ini adalah grafik jumlah anak dari setiap umur bulannya")
 
 # Membuat grafik garis distribusi umur
